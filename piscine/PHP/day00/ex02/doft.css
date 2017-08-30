@@ -1,0 +1,24 @@
+body {
+	margin: 0 auto;
+	background-color: #505050;
+}
+header {
+	-moz-box-shadow: 10px 10px 5px 0px #000;
+	-webkit-box-shadow: 10px 10px 5px 0px #000;
+	-o-box-shadow: 10px 10px 5px 0px #000;
+	box-shadow: 10px 10px 5px 0px #000;
+	background-color: #909090;
+	height: 200px;
+	border-radius: 10px;
+	margin: 30px auto;
+}
+header img, header {
+	border-radius: 10px;
+}
+header img {
+	height: 100%;
+}
+header, #page {
+	width: 1400px;
+}
+
