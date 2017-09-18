@@ -1,0 +1,12 @@
+td {
+	width: auto;
+	font-family: arial, sans-serif;
+	color: #fff;
+	border-radius: 3px;
+}
+table { width: 100%; }
+h3 { text-align: center; }
+.metaux { background-color: #C5B1E4; }
+.transition { background-color: #9ED0E9; }
+.non-metaux { background-color: #E85A46; }
+.gaz { background-color: #FEEF34; }
