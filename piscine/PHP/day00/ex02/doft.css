@@ -2,7 +2,7 @@ body {
 	margin: 0 auto;
 	background-color: #505050;
 }
-.style-blc {
+.style-blc, #chat{
 	-moz-box-shadow: 10px 10px 5px 0px #000;
 	-webkit-box-shadow: 10px 10px 5px 0px #000;
 	-o-box-shadow: 10px 10px 5px 0px #000;
@@ -15,8 +15,15 @@ header {
 	width: 1400px;
 	margin: 30px auto;
 }
-header img, header {
-	border-radius: 10px;
+#lp, #btn-menu { float: right; }
+#btn-menu { margin: 10px; }
+#lp {
+	height: 160px;
+	margin-top: 20px;
+}
+#btn-menu img {
+	height: 20px;
+	display: block;
 }
 #page {
 	width: 1300px;
@@ -30,5 +37,31 @@ header img, header {
 }
 .sides {
 	width: 160px;
-	height: 400px;
+	height: 420px;
+}
+#left img, #right img {
+	width: 70px;
+	display: block;
+	margin: 10px auto;
+}
+#wall {
+	width: 116px;
+	height: 75px;
+	margin: auto;
+	background: url("resources/brick.jpg") repeat;
+}
+#chat {
+	background-color: #88ff89;
+	width: 500px;
+	height: 180px;
+	padding: 10px;
+	position: absolute;
+	bottom: 60px;
+	left: 170px;
+}
+#reply { width: 320px; }
+p {
+	margin: 0;
+	font-size: 18px;
+	font-family: arial;
 }

@@ -8,11 +8,35 @@
 	<body>
 		<header class="style-blc">
 			<img style="height:130px;margin-top:15px;" src="resources/day_of_the_42.png" alt="Day of the 42"/>
+			<div id="btn-menu">
+				<img style="margin-bottom:100px" src="resources/reload.png" alt="reload"/>
+				<img src="resources/close.gif" alt="close"/>
+			</div>
+			<img id="lp" src="resources/loupe.png" alt="loupe"/>
 		</header>
 		<div id="page">
-			<div class="style-blc sides"></div>
+			<div id="left" class="style-blc sides">
+				<img src="resources/arrow.png" alt="arrow"/>
+				<img src="resources/main.png" alt="main"/>
+				<img style="border:4px solid red;border-radius:5px;" src="resources/oeil.png" alt="oeil"/>
+				<img src="resources/outil.png" alt="outil/">
+				<img src="resources/chat-icon.png" alt="chat"/>
+			</div>
 			<div class="style-blc" id="center"><img style="width:100%;" src="resources/cluster.jpg" alt="42"/></div>
-			<div class="style-blc sides"></div>
+			<div id="right" class="style-blc sides">
+				<img src="resources/book.png" alt="book"/>
+				<img src="resources/towel.png" alt="towel"/>
+				<div id="wall"></div>
+			</div>
+		</div>
+		<div id="chat">
+			<form>
+				<p>Vous <span style="font-size:30px;font-weight:bold;font-family:cerif;">entrez</span> alors dans une grande piece remplie<br/>
+				d'<span>ordinateurs</span>...<br/>
+				<span style="font-style:italic">-Bonjour, vous &ecirc;tes nouveau ici ?</span></p>
+				<input type="text" name="reply" id="reply"></input>
+				<input type="submit" name="submit" id="submit" value="Repondre"></input>
+			</form>
 		</div>
 	</body>
 </html>
