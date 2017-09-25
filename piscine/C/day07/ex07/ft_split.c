@@ -17,7 +17,7 @@ int	ft_test(int i, char *str, char *charset) {
 
 int	ft_word_count(char *str, char *charset) {
 	int count = 1, i;
-	for (i = 0; str[i]; i++) {
+	for (i = 1; str[i]; i++) {
 		if (ft_test(i, str, charset)) count++;
 	}
 	return (count);
