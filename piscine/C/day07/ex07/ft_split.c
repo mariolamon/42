@@ -35,6 +35,6 @@ char	**ft_split(char *str, char *charset) {
 		result[x][y] = '\0';
 		x++;
 	}
-	result[ft_word_count(str, charset) + 1] = 0;
+	result[ft_word_count(str, charset)] = 0;
 	return (result);
 }
