@@ -1,6 +1,8 @@
 #include <stdlib.h>
+#include <unistd.h>
+#include <stdio.h>
 
-int	ft_nb_word(char *str) {
+int	ft_word_count(char *str) {
 	int nb_word = 0, i = 0;
 	if (str[i] != ' ' && str[i] != '\t' && str[i] != '\n') nb_word++;
 	while (str[i]) {
@@ -16,9 +18,9 @@ int	ft_local(int i, char *str, int *lenght) {
 	while (str[i]) {
 		if ((str[i] != ' ' && str[i] != '\t' && str[i] != '\n') && !word) {
 			word = 1;
-			beg = i;
+			tmp = i;
 			while (str[i] != ' ' && str[i] != '\t' && str[i] != '\n' && str[i] != '\0') i++;
-			*lenght = i - tmp;
+			lenght[0] = i - tmp;
 			break;
 		}
 		i++;
@@ -27,15 +29,16 @@ int	ft_local(int i, char *str, int *lenght) {
 }
 
 char	**ft_split_whitespaces(char *str) {
-	int x, y, i = 0, word_lenght = 0;
-	char **result = (char **)malloc(sizeof(char *) * (ft_nb_word(str) + 1));
-	while (x < ft_nb_word(str)) {
+	int y, x = 0, i = 0, word_lenght = 0;
+	char **result = (char **)malloc(sizeof(char *) * (ft_word_count(str) + 1));
+	while (x < ft_word_count(str)) {
 		i = ft_local(i, str, &word_lenght);
+		printf("%d\n", word_lenght);
 		result[x] = (char *)malloc(sizeof(char) * (word_lenght + 1));
 		for (y = 0; y < word_lenght; y++) result[x][y] = str[i++];
 		result[x][y] = '\0';
 		x++;
 	}
-	result[ft_nb_word(str) + 1] = 0;
+	result[ft_word_count(str)] = 0;
 	return (result);
 }
