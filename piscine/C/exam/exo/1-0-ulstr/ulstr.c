@@ -11,6 +11,6 @@ int	main(int ac, char **av) {
 			if (av[1][i] >= 65 && av[1][i] <= 90) ft_putchar(av[1][i] + 32);
 			if (av[1][i] >= 97 && av[1][i] <= 122) ft_putchar(av[1][i] - 32);
 		}
-	} write (1, "\n", 1);
+	} ft_putchar('\n');
 	return (0);
 }
