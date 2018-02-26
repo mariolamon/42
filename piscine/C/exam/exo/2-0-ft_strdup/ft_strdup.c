@@ -1,3 +1,3 @@
 char	*ft_strdup(char *src) {
-	return (src);
+	return(src);
 }
